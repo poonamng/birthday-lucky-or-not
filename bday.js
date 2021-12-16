@@ -1,7 +1,7 @@
 var dobInput = document.getElementById("dob");
 var favnumInput = document.getElementById("favnum");
 var btnCheck = document.getElementById("btn-check");
-var btnReset = document.getElementById("btn-reset");
+var btnReset = document.getElementById("btn-clear");
 var warning = document.querySelector(".warning");
 var luckySection = document.querySelector(".lucky-div");
 var unluckySection = document.querySelector(".unlucky-div");
@@ -48,7 +48,7 @@ btnClose.addEventListener("click",()=>{
 })
 
 
-btnReset.addEventListener("click",()=>{
+btnClear.addEventListener("click",()=>{
     privacy.style.display = "block";
     dobInput.value = "";
     favnumInput.value = "";
